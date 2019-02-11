@@ -1,0 +1,19 @@
+<!ELEMENT resume (name,cel,photo,email,birthPlace,address,jobs)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT cel (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email type (personal|work|other) #REQUIRED>
+<!ELEMENT birthPlace (#PCDATA)>
+<!ELEMENT address (street,exteriorNumber,suburb,city)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT exteriorNumber (#PCDATA)>
+<!ELEMENT suburb (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT jobs (job*)>
+<!ELEMENT job (startDate,endDate,companyName,position)>
+<!ELEMENT startDate (#PCDATA)>
+<!ELEMENT endDate (#PCDATA)>
+<!ELEMENT companyName (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+
