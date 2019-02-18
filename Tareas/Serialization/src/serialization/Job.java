@@ -16,54 +16,53 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Job {
     @XmlElement
-    private String startDate;
-    @XmlElement
-    private String endDate;
-    @XmlElement
-    private String companyName;
-    @XmlElement
     private String position;
+    @XmlElement
+    private String company;    
+    @XmlElement
+    private String startdate;
+    @XmlElement
+    private String enddate;    
 
     public Job() {
     }
 
-    public Job(String startDate, String endDate, String companyName, String position) {
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.companyName = companyName;
+    public Job(String position, String company, String startdate, String enddate) {
         this.position = position;
-    }
-
-    public String getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
-    }
-
-    public String getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+        this.company = company;
+        this.startdate = startdate;
+        this.enddate = enddate;
     }
 
     public String getPosition() {
         return position;
     }
-    
+
     public void setPosition(String position) {
         this.position = position;
-    }    
-    
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getStartdate() {
+        return startdate;
+    }
+
+    public void setStartdate(String startdate) {
+        this.startdate = startdate;
+    }
+
+    public String getEnddate() {
+        return enddate;
+    }
+
+    public void setEnddate(String enddate) {
+        this.enddate = enddate;
+    }
 }

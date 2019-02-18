@@ -5,7 +5,6 @@
  */
 package serialization;
 
-import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -16,33 +15,33 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 @XmlRootElement()
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Resume {
+public class Curriculum {
     @XmlElement
     private String name;
-    @XmlElement
+    @XmlElement(name="phone")
     private String cel;
     @XmlElement
-    @XmlJavaTypeAdapter(Base64Adapter.class)
-    private byte[] photo;    
-    @XmlElement    
-    private Email email;   
+    private String birthplace;    
     @XmlElement
-    private String birthPlace;    
+    private Email email;
+    @XmlElement(name="photo")
+    @XmlJavaTypeAdapter(Base64Adapter.class)
+    private byte[] photo;               
     @XmlElement
     private Address address;
-    @XmlElementWrapper
+    @XmlElementWrapper(name="jobs")
     @XmlElement(name="job")
     private List<Job> jobs;
 
-    public Resume() {
+    public Curriculum() {
     }                
 
-    public Resume(String name, String cel, Email email, byte[] photo, String birthPlace, Address address, List<Job> jobs) {
+    public Curriculum(String name, String cel, String birthplace, Email email, byte[] photo, Address address, List<Job> jobs) {
         this.name = name;
         this.cel = cel;
-        this.photo = photo;
+        this.birthplace = birthplace;
         this.email = email;
-        this.birthPlace = birthPlace;
+        this.photo = photo;
         this.address = address;
         this.jobs = jobs;
     }
@@ -62,13 +61,13 @@ public class Resume {
     public void setCel(String cel) {
         this.cel = cel;
     }
-        
-    public byte[] getPhoto() {
-        return photo;
+
+    public String getBirthplace() {
+        return birthplace;
     }
 
-    public void setPhoto(byte[] photo) {
-        this.photo = photo;
+    public void setBirthplace(String birthplace) {
+        this.birthplace = birthplace;
     }
 
     public Email getEmail() {
@@ -79,12 +78,12 @@ public class Resume {
         this.email = email;
     }
 
-    public String getBirthPlace() {
-        return birthPlace;
+    public byte[] getPhoto() {
+        return photo;
     }
 
-    public void setBirthPlace(String birthPlace) {
-        this.birthPlace = birthPlace;
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
     }
 
     public Address getAddress() {
@@ -103,11 +102,5 @@ public class Resume {
         this.jobs = jobs;
     }
     
-    public void addJob(Job job) {
-        if(this.jobs == null)
-            this.jobs = new ArrayList<Job>();
-        
-        this.jobs.add(job);
-    }
     
 }

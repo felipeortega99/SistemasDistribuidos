@@ -18,20 +18,23 @@ public class Address {
     @XmlElement
     private String street;
     @XmlElement
-    private int exteriorNumber;
-    @XmlElement
-    private String suburb;
+    private int number;
     @XmlElement
     private String city;
+    @XmlElement
+    private String state;
+    @XmlElement
+    private String zipcode;
 
     public Address() {
     }    
 
-    public Address(String street, int exteriorNumber, String suburb, String city) {
+    public Address(String street, int number, String city, String state, String zipcode) {
         this.street = street;
-        this.exteriorNumber = exteriorNumber;
-        this.suburb = suburb;
+        this.number = number;
         this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
     }
 
     public String getStreet() {
@@ -42,20 +45,12 @@ public class Address {
         this.street = street;
     }
 
-    public int getExteriorNumber() {
-        return exteriorNumber;
+    public int getNumber() {
+        return number;
     }
 
-    public void setExteriorNumber(int exteriorNumber) {
-        this.exteriorNumber = exteriorNumber;
-    }
-
-    public String getSuburb() {
-        return suburb;
-    }
-
-    public void setSuburb(String suburb) {
-        this.suburb = suburb;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public String getCity() {
@@ -65,6 +60,21 @@ public class Address {
     public void setCity(String city) {
         this.city = city;
     }
-    
-    
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
 }
