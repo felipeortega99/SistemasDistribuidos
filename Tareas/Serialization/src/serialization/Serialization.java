@@ -31,7 +31,7 @@ public class Serialization {
         List<Job> jobs = new ArrayList<>();
         Address address;
         Curriculum curriculum;
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         // Address
         String street;
         int number;
@@ -154,7 +154,7 @@ public class Serialization {
         marshaller.setProperty("com.sun.xml.internal.bind.xmlHeaders",
                 "\n<?xml-stylesheet type=\"text/xsl\" href=\"CurriculumView.xsl\"?>"
                         + "\n<!DOCTYPE curriculum SYSTEM \"curriculum.dtd\">");
-        marshaller.marshal(resume, new File("Curriculum.xml"));
+        marshaller.marshal(resume, new File("res/curriculum.xml"));
         marshaller.marshal(resume, System.out);
     }
     
