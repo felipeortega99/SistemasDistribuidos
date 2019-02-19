@@ -36,7 +36,7 @@
                         <h3 class="content-title">CONTACT</h3>
                         <h5>EMAIL</h5>
                         <p>
-                            <xsl:value-of select="email"/> | <xsl:value-of select="email/@type"/>
+                            <xsl:value-of select="email"/> | <span class="badge badge-success"><xsl:value-of select="email/@type"/></span>
                         </p>                        
                         <h5>PHONE</h5>
                         <p>

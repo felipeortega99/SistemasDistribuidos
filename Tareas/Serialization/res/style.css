@@ -46,6 +46,10 @@ img {
     height: auto;
 }
 
+.badge-success {
+    background-color: #3aa484!important;
+}
+
 .curriculum__body--grid-container {
     display: grid;
     grid-template: 35% auto / auto 45%;
