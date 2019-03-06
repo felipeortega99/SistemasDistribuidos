@@ -28,7 +28,7 @@ public class IdGenerator {
         System.out.print("Cantidad de matriculas a crear: ");
         idsNumber = input.nextInt();
         
-        // Add a random number to idsList
+        // Add random number to idsList
         for (int i = 0; i < idsNumber; i++) {
             id = rnd.nextInt((MAX - MIN) + 1) + MIN;
             idsList.add(Integer.toString(id));

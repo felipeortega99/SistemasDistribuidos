@@ -68,6 +68,11 @@ public class ThreadsProcess {
         
         threadOne.start();
         threadTwo.start();                     
+        
+        while(threadOne.isAlive() || threadTwo.isAlive()){            
+        }
+        
+        printResults();
     }
     
     public static void CalcularValores(List idsList, String threadNum) {
@@ -91,12 +96,11 @@ public class ThreadsProcess {
             }
         }
         totalRegistros = totalPares + totalImpares;
-        processTime = System.currentTimeMillis()-startTime;
-        printResults(threadNum);
+        processTime = System.currentTimeMillis()-startTime;        
     }
     
-    public static void printResults(String threadNum) {
-        System.out.println("------------ Proceso de "+threadNum +" ------------");
+    public static void printResults() {
+        System.out.println("------------ Proceso de ------------");
         System.out.println("Total de registros procesados: "+totalRegistros);
         System.out.println("Total de registros pares: "+totalPares);
         System.out.println("Total de registros impares: "+totalImpares);

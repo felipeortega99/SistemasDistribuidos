@@ -35,10 +35,10 @@ public class SyncProcess {
         }
         idsFile.close(); 
         
-        CalcularValores(idsList);       
+        calcularValores(idsList);       
     }
     
-    public static void CalcularValores(List idsList) {
+    public static void calcularValores(List idsList) {
         startTime = System.currentTimeMillis();
         int id;         
         for (int i = 0; i < idsList.size(); i++) {

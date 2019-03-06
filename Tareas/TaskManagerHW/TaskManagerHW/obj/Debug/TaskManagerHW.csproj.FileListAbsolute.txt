@@ -1,0 +1,13 @@
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\bin\Debug\TaskManagerHW.exe.config
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\bin\Debug\TaskManagerHW.exe
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\bin\Debug\TaskManagerHW.pdb
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.csprojResolveAssemblyReference.cache
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.Form1.resources
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.frmEndTask.resources
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.Properties.Resources.resources
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.frmRunTask.resources
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.csproj.GenerateResource.Cache
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.csproj.CoreCompileInputs.cache
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.exe
+c:\users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.pdb
+C:\Users\sk8fo_000\documents\visual studio 2017\Projects\TaskManagerHW\TaskManagerHW\obj\Debug\TaskManagerHW.frmMemory.resources
